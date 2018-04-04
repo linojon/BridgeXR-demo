@@ -61,7 +61,7 @@ public class TimelinePlayableWizard : EditorWindow
             UsableType other = (UsableType)obj;
 
             if (other == null)
-                throw new ArgumentException("This object is not a Variable.");
+                throw new ArgumentException("This object is not a BxrSceneTemplate.");
 
             return name.ToLower().CompareTo(other.name.ToLower());
         }
@@ -363,7 +363,7 @@ public class TimelinePlayableWizard : EditorWindow
                 case "Color":
                     return NameAsLocalSerializedProperty + ".colorValue = trackBinding." + name;
                 case "string":
-                    return NameAsLocalSerializedProperty + ".stringValue = trackBinding." + name;
+                    return NameAsLocalSerializedProperty + ".StringValue = trackBinding." + name;
                 case "Quaternion":
                     return NameAsLocalSerializedProperty + ".quaternionValue = trackBinding." + name;
                 case "bool":
