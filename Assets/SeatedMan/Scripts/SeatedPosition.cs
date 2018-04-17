@@ -12,7 +12,7 @@ public class SeatedPosition : MonoBehaviour
     public Sex CurrentSex = Sex.Male;
     public Transform ChairHeightTransform;
     public Transform EyeLevelTransform;
-
+    public GameObject DummyGuy;
     void OnValidate()
     {
         if(!EyeLevelTransform || !ChairHeightTransform)
@@ -30,6 +30,22 @@ public class SeatedPosition : MonoBehaviour
         }
         
         EyeLevelTransform.position = chairPosition;
+    }
 
+    void OnDrawGizmos()
+    {
+        if (DummyGuy)
+        {
+            MeshFilter[] meshFilters = DummyGuy.GetComponentsInChildren<MeshFilter>();
+            for (int i = 0; i < meshFilters.Length; i++)
+            {
+                Vector3 localScale = meshFilters[i].transform.localScale + transform.localScale;
+                Vector3 localPosition = meshFilters[i].transform.localPosition + transform.position;
+                Quaternion localRotation = meshFilters[i].transform.localRotation * transform.rotation;
+                Gizmos.color = Color.green;
+                Gizmos.DrawMesh(meshFilters[i].sharedMesh, localPosition, localRotation, localScale);
+            }
+        }
+   
     }
 }
