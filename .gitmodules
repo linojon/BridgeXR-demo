@@ -1,3 +1,6 @@
 [submodule "Assets/BridgeXR"]
 	path = Assets/BridgeXR
 	url = git@github.com:linojon/BridgeXR.git
+[submodule "ParkerhillCommon"]
+	path = ParkerhillCommon
+	url = git@github.com:linojon/ParkerhillCommon.git
