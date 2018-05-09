@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:DeviceModules/SteamVR/Scenes.meta
+guid: ba19a99c34226d34baa273fc44894cbc
+=======
+guid: 147352adf1bae8b41b8d474fe2ab18c3
+>>>>>>> added daydream event calls:DeviceModules/Daydream/Scenes.meta
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:DeviceModules/SteamVR/Prefabs.meta
+guid: 2fc1ddaef7206054caa48d2dcd45a901
+=======
+guid: f0f5f820ea3566745a453355243266ed
+>>>>>>> added daydream event calls:DeviceModules/Daydream/Prefabs.meta
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
