@@ -4,3 +4,6 @@
 [submodule "Assets/ParkerhillCommon"]
 	path = Assets/ParkerhillCommon
 	url = git@github.com:linojon/ParkerhillCommon.git
+[submodule "Assets/BridgeXR-public"]
+	path = Assets/BridgeXR-public
+	url = git@github.com:parkerhillvr/BridgeXR-public.git
